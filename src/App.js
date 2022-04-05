@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Map from "./Components/map.js";
+import pin from "./Components/pinText.js";
 import Accordion from "./Components/Accordion.js";
 import "bootstrap";
 import "./App.css";
@@ -13,8 +14,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Staten Island Crash Locations 2022</h1>
+        <h1>Staten Island: 5 Crash Site Locations</h1>
         <Map />
+        <pin />
         <Accordion />
       </div>
     );

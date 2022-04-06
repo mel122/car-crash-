@@ -1,14 +1,16 @@
+
+
+
+
+}
+
+
 let data = [
   {
+
     crash_date: "2021-04-14T00:00:00.000",
     crash_time: "5:32",
     on_street_name: "BRONX WHITESTONE BRIDGE",
-    number_of_persons_injured: "0",
-    number_of_persons_killed: "0",
-    number_of_pedestrians_injured: "0",
-    number_of_pedestrians_killed: "0",
-    number_of_cyclist_injured: "0",
-    number_of_cyclist_killed: "0",
     number_of_motorist_injured: "0",
     number_of_motorist_killed: "0",
     contributing_factor_vehicle_1: "Following Too Closely",
@@ -25833,3 +25835,4 @@ let data = [
     vehicle_type_code1: "Sedan"
   }
 ];
+export default data;

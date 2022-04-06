@@ -15,9 +15,7 @@ function Accordion() {
               data-bs-target="#flush-collapseOne"
               aria-expanded="false"
               aria-controls="flush-collapseOne"
-            >
-              Greenfield Avenue
-            </button>
+            ></button>
           </h2>
           <div
             id="flush-collapseOne"

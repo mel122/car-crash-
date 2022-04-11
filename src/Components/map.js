@@ -7,16 +7,17 @@ import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 console.log(data.crash_time);
 console.log(data.borough);
 
+let bData = {
+  MANHATTAN: 0,
+  BROOKLYN: 0,
+  QUEENS: 0
+  BRONX: 0,
+};
+
 function Map() {
+  //map for borough
+
   return (
-
-    map.data{
-
-
-
-    }
-
-
     <div className="Map">
       <img src={pic} />
 

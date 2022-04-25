@@ -7,11 +7,39 @@ import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 console.log(data.crash_time);
 console.log(data.borough);
 
+//import React, { Component } from "react";
+//import "./App.css";
+
+//class App extends Component {
+// constructor(props) {
+//  super(props);
+//  this.state = {
+// Add data state here
+//    data: []
+//  };
+// }
+
+// Code your API request here
+//componentDidMount = () => {
+//  fetch(
+//   " data"
+//   )
+// .then((response) => response.json())
+//  .then((data) => {
+//     this.setState({ data: data });
+//  console.log(this.state.data);
+//   })
+//   .catch((e) => {
+//    console.log(e);
+//   });
+// };
+
 let bData = {
-  MANHATTAN: 0,
-  BROOKLYN: 0,
-  QUEENS: 0
-  BRONX: 0,
+  //MANHATTAN: 0,
+  // BROOKLYN: 0,
+  // QUEENS: 0
+  // BRONX: 0,
+  // STATEN ISLAND: 0
 };
 
 function Map() {
@@ -25,7 +53,7 @@ function Map() {
         <VictoryAxis
           tickValues={[
             "STATEN ISLAND",
-            " BRONX",
+            "BRONX",
             "QUEENS",
             "BROOKLYN",
             "MANHATTAN"

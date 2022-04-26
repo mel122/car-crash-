@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Map from "./Components/map.js";
-import pin from "./Components/pinText.js";
-import Accordion from "./Components/Accordion.js";
 import "bootstrap";
 import "./App.css";
 
@@ -10,18 +8,18 @@ class App extends Component {
     super(props);
     this.state = {};
   }
-
+  counters = {
+    manhattan: 0,
+    brooklyn: 0
+  };
+  //map ()
   render() {
     return (
       <div className="App">
-        <h1>New York City: 5 Crash Site Locations</h1>
+        <h1>Staten Island Crash Locations 2022</h1>
         <Map />
-
-        <pin />
-        <Accordion />
       </div>
     );
   }
 }
-
 export default App;

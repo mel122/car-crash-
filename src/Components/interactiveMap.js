@@ -3,9 +3,10 @@ import ReactMapGl, { Marker, Popup } from "react-map-gl";
 import Geocoder from "react-map-gl-geocoder";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
+//https://medium.com/geekculture/building-an-interactive-map-with-mapbox-react-f335384f4863
 
 const mapboxToken =
-  "https://data.cityofnewyork.us/resource/h9gi-nx95.json$==pk.eyJ1IjoiYWRyaWFuYWRsczkiLCJhIjoiY2wyajc5M2t6MDl5cTNqbzhocmZ0cWl0YiJ9.a7tm_F4gzekwWxVRLEFyhg";
+  "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$$app_token=pk.eyJ1IjoiYWRyaWFuYWRsczkiLCJhIjoiY2wyajc5M2t6MDl5cTNqbzhocmZ0cWl0YiJ9.a7tm_F4gzekwWxVRLEFyhg";
 
 class Map extends Component {
   constructor() {

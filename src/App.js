@@ -1,8 +1,23 @@
 import React, { Component } from "react";
-import Map from "./Components/interactiveMap.js";
+import interactiveMap from "./Components/interactiveMap.js";
 //import Navbar from ".Components/navbar.js";
 import "bootstrap";
 import "./App.css";
+import data from "./Components/data";
+
+data.forEach((data) => {
+  console.log(data.borough);
+});
+
+data.map(borough){
+
+  bdata.push({})
+
+}
+
+// === "STATEN ISLAND") {
+ // bdata += 1;
+// }
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +33,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Staten Island Crash Locations 2022</h1>
-        <Map />
+        <interactiveMap />
       </div>
     );
   }

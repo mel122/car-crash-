@@ -35,11 +35,8 @@ console.log(data.borough);
 // };
 
 let bData = {
-  //MANHATTAN: 0,
-  // BROOKLYN: 0,
-  // QUEENS: 0
-  // BRONX: 0,
-  // STATEN ISLAND: 0
+ 
+   STATEN ISLAND: 0
 };
 
 function Map() {

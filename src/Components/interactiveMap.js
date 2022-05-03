@@ -6,9 +6,9 @@ import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 //https://medium.com/geekculture/building-an-interactive-map-with-mapbox-react-f335384f4863
 
 const mapboxToken =
-  "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$$app_token=pk.eyJ1IjoiYWRyaWFuYWRsczkiLCJhIjoiY2wyajc5M2t6MDl5cTNqbzhocmZ0cWl0YiJ9.a7tm_F4gzekwWxVRLEFyhg";
+  "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$$app_token=yJglS9h953MLBYNHJC4EDB4Q0";
 
-class Map extends Component {
+class interactiveMap extends Component {
   constructor() {
     super();
     this.state = {
@@ -124,4 +124,4 @@ class Map extends Component {
   }
 }
 
-export default Map;
+export default interactiveMap;

@@ -6,6 +6,7 @@ import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 
 console.log(data.crash_time);
 console.log(data.borough);
+console.log(this.state.staten);
 
 //import React, { Component } from "react";
 //import "./App.css";
@@ -34,10 +35,10 @@ console.log(data.borough);
 //   });
 // };
 
-let bData = {
- 
-   STATEN ISLAND: 0
-};
+//let bData = {
+
+// STATEN ISLAND;
+//};
 
 function Map() {
   //map for borough
@@ -47,15 +48,7 @@ function Map() {
       <img src={pic} />
 
       <VictoryChart>
-        <VictoryAxis
-          tickValues={[
-            "STATEN ISLAND",
-            "BRONX",
-            "QUEENS",
-            "BROOKLYN",
-            "MANHATTAN"
-          ]}
-        />
+        <VictoryAxis tickValues={["STATEN ISLAND"]} />
         <VictoryAxis dependentAxis tickFormat={(x) => `${x} mil`} />
 
         <VictoryBar data={data} x="borough" y="crash_time" />

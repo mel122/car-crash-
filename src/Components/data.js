@@ -1,11 +1,5 @@
-
-
-
-
-
 let data = [
   {
-
     crash_date: "2021-04-14T00:00:00.000",
     crash_time: "5:32",
     on_street_name: "BRONX WHITESTONE BRIDGE",

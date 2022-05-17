@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import interactiveMap from "./Components/interactiveMap.js";
 import Navbar from "./Components/navbar.js";
 import Cards from "./Components/card.js";
+import Map from "./Components/map";
 import "bootstrap";
 import "./App.css";
 import data from "./Components/data";
@@ -42,6 +43,7 @@ class App extends Component {
         <Navbar />
         <h1>Staten Island Crash Locations 2022</h1>
         <Cards />
+        <Map />
       </div>
     );
   }

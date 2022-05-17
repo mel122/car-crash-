@@ -4,10 +4,6 @@ import data from "./data";
 
 import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 
-console.log(data.crash_time);
-console.log(data.borough);
-console.log(this.state.staten);
-
 //import React, { Component } from "react";
 //import "./App.css";
 
@@ -45,8 +41,6 @@ function Map() {
 
   return (
     <div className="Map">
-      <img src={pic} />
-
       <VictoryChart>
         <VictoryAxis tickValues={["STATEN ISLAND"]} />
         <VictoryAxis dependentAxis tickFormat={(x) => `${x} mil`} />

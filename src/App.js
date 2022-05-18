@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import interactiveMap from "./Components/interactiveMap.js";
 import Navbar from "./Components/navbar.js";
 import Cards from "./Components/card.js";
 import Map from "./Components/map";
 import "bootstrap";
 import "./App.css";
-import data from "./Components/data";
+import StatenData from "./Components/StatenData.js";
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class App extends Component {
 
   addToBoroughCount = (Borough) => {
     console.log("STATEN ISLAND");
-    this.setState((data) => {
+    this.setState((StatenData) => {
       this.state.staten.push("STATEN ISLAND");
       return this.state.staten;
     });

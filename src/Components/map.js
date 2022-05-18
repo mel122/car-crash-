@@ -1,6 +1,6 @@
 import React from "react";
 import pic from "./images/Map.jpeg";
-import data from "./data";
+import StatenData from "./StatenData";
 
 import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 
@@ -43,9 +43,9 @@ function Map() {
     <div className="Map">
       <VictoryChart>
         <VictoryAxis tickValues={["STATEN ISLAND"]} />
-        <VictoryAxis dependentAxis tickFormat={(x) => `${x} mil`} />
+        <VictoryAxis dependentAxis tickFormat={(x) => `${x} min`} />
 
-        <VictoryBar data={data} x="borough" y="crash_time" />
+        <VictoryBar StatenData={StatenData} x="borough" y="crash_time" />
       </VictoryChart>
     </div>
   );

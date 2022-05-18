@@ -1,168 +1,46 @@
 let StatenData = [
   [
     {
-      crash_date: "2021-04-15T00:00:00.000",
+      
       crash_time: "20:00",
       borough: "STATEN ISLAND",
-      zip_code: "10304",
-      on_street_name: "GREENFIELD AVENUE",
-      off_street_name: "OSGOOD AVENUE",
-      number_of_persons_injured: "0",
-      number_of_persons_killed: "0",
-      number_of_pedestrians_injured: "0",
-      number_of_pedestrians_killed: "0",
-      number_of_cyclist_injured: "0",
-      number_of_cyclist_killed: "0",
-      number_of_motorist_injured: "0",
-      number_of_motorist_killed: "0",
-      contributing_factor_vehicle_1: "Unspecified",
-      collision_id: "4408310",
-      vehicle_type_code1: "Sedan"
+     
     },
     {
-      crash_date: "2021-04-06T00:00:00.000",
+     
       crash_time: "22:58",
       borough: "STATEN ISLAND",
-      zip_code: "10312",
-      latitude: "40.5268940",
-      longitude: "-74.1672800",
-      location: {
-        latitude: "40.526894",
-        longitude: "-74.16728",
-        human_address: '{"address": "", "city": "", "state": "", "zip": ""}'
-      },
-      on_street_name: "BARCLAY AVENUE",
-      off_street_name: "HYLAN BOULEVARD",
-      number_of_persons_injured: "7",
-      number_of_persons_killed: "0",
-      number_of_pedestrians_injured: "0",
-      number_of_pedestrians_killed: "0",
-      number_of_cyclist_injured: "0",
-      number_of_cyclist_killed: "0",
-      number_of_motorist_injured: "7",
-      number_of_motorist_killed: "0",
-      contributing_factor_vehicle_1: "Failure to Yield Right-of-Way",
-      contributing_factor_vehicle_2: "Unsafe Speed",
-      collision_id: "4405244",
-      vehicle_type_code1: "Station Wagon/Sport Utility Vehicle",
-      vehicle_type_code2: "Station Wagon/Sport Utility Vehicle"
     },
     {
-      crash_date: "2021-04-14T00:00:00.000",
+     
       crash_time: "16:30",
       borough: "STATEN ISLAND",
-      zip_code: "10308",
-      latitude: "40.542908",
-      longitude: "-74.15579",
-      location: {
-        latitude: "40.542908",
-        longitude: "-74.15579",
-        human_address: '{"address": "", "city": "", "state": "", "zip": ""}'
+     
       },
-      on_street_name: "ARMSTRONG AVENUE",
-      off_street_name: "SYCAMORE STREET",
-      number_of_persons_injured: "2",
-      number_of_persons_killed: "0",
-      number_of_pedestrians_injured: "0",
-      number_of_pedestrians_killed: "0",
-      number_of_cyclist_injured: "0",
-      number_of_cyclist_killed: "0",
-      number_of_motorist_injured: "2",
-      number_of_motorist_killed: "0",
-      contributing_factor_vehicle_1: "Failure to Yield Right-of-Way",
-      contributing_factor_vehicle_2: "Unspecified",
-      contributing_factor_vehicle_3: "Unspecified",
-      contributing_factor_vehicle_4: "Unspecified",
-      collision_id: "4407349",
-      vehicle_type_code1: "Station Wagon/Sport Utility Vehicle",
-      vehicle_type_code2: "Sedan",
-      vehicle_type_code_3: "Sedan",
-      vehicle_type_code_4: "Sedan"
-    },
+   
     {
-      crash_date: "2021-04-16T00:00:00.000",
+      
       crash_time: "12:00",
       borough: "STATEN ISLAND",
-      zip_code: "10306",
-      latitude: "40.57365",
-      longitude: "-74.11252",
-      location: {
-        latitude: "40.57365",
-        longitude: "-74.11252",
-        human_address: '{"address": "", "city": "", "state": "", "zip": ""}'
+      
       },
-      on_street_name: "EDISON STREET",
-      off_street_name: "BACHE AVENUE",
-      number_of_persons_injured: "0",
-      number_of_persons_killed: "0",
-      number_of_pedestrians_injured: "0",
-      number_of_pedestrians_killed: "0",
-      number_of_cyclist_injured: "0",
-      number_of_cyclist_killed: "0",
-      number_of_motorist_injured: "0",
-      number_of_motorist_killed: "0",
-      contributing_factor_vehicle_1: "Failure to Yield Right-of-Way",
-      contributing_factor_vehicle_2: "Unspecified",
-      collision_id: "4407849",
-      vehicle_type_code1: "Sedan",
-      vehicle_type_code2: "Sedan"
-    },
+      
     {
-      crash_date: "2021-04-14T00:00:00.000",
+      
       crash_time: "6:45",
       borough: "STATEN ISLAND",
-      zip_code: "10308",
-      latitude: "40.54048",
-      longitude: "-74.153404",
-      location: {
-        latitude: "40.54048",
-        longitude: "-74.153404",
-        human_address: '{"address": "", "city": "", "state": "", "zip": ""}'
+      
       },
-      on_street_name: "ARMSTRONG AVENUE",
-      off_street_name: "HILLCREST STREET",
-      number_of_persons_injured: "0",
-      number_of_persons_killed: "0",
-      number_of_pedestrians_injured: "0",
-      number_of_pedestrians_killed: "0",
-      number_of_cyclist_injured: "0",
-      number_of_cyclist_killed: "0",
-      number_of_motorist_injured: "0",
-      number_of_motorist_killed: "0",
-      contributing_factor_vehicle_1: "View Obstructed/Limited",
-      contributing_factor_vehicle_2: "Unspecified",
-      collision_id: "4407338",
-      vehicle_type_code1: "Station Wagon/Sport Utility Vehicle",
-      vehicle_type_code2: "Sedan"
-    },
+      
     {
-      crash_date: "2021-04-14T00:00:00.000",
+      
       crash_time: "17:30",
       borough: "STATEN ISLAND",
-      zip_code: "10306",
-      latitude: "40.565254",
-      longitude: "-74.1301",
-      location: {
-        latitude: "40.565254",
-        longitude: "-74.1301",
-        human_address: '{"address": "", "city": "", "state": "", "zip": ""}'
+
       },
-      on_street_name: "AMBOY ROAD",
-      off_street_name: "GUYON AVENUE",
-      number_of_persons_injured: "0",
-      number_of_persons_killed: "0",
-      number_of_pedestrians_injured: "0",
-      number_of_pedestrians_killed: "0",
-      number_of_cyclist_injured: "0",
-      number_of_cyclist_killed: "0",
-      number_of_motorist_injured: "0",
-      number_of_motorist_killed: "0",
-      contributing_factor_vehicle_1: "Unspecified",
-      collision_id: "4407350",
-      vehicle_type_code1: "Sedan"
-    },
+  
     {
-      crash_date: "2021-04-15T00:00:00.000",
+     
       crash_time: "18:00",
       borough: "STATEN ISLAND",
       zip_code: "10301",

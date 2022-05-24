@@ -4,17 +4,18 @@ import Cards from "./Components/card.js";
 import Map from "./Components/map";
 import "bootstrap";
 import "./App.css";
-import StatenData from "./Components/StatenData.js";
-
+//import StatenData from "./Components/StatenData.js";
+import data from "./Components/data.js";
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+  //https://data.cityofnewyork.us/resource/h9gi-nx95.json (API)
 
   addToBoroughCount = (Borough) => {
     console.log("STATEN ISLAND");
-    this.setState((StatenData) => {
+    this.setState((data) => {
       this.state.staten.push("STATEN ISLAND");
       return this.state.staten;
     });

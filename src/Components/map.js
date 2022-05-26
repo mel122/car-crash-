@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import pic from "./images/Map.jpeg";
 import StatenData from "./StatenData";
 import data from "./data";
+import Card from "./card";
 import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 
 //const data2 = [
@@ -43,7 +45,7 @@ import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 // STATEN ISLAND;
 //};
 
-function Map() {
+function Map(props) {
   //map for borough
   let si = 0;
   let mh = 0;
@@ -67,11 +69,6 @@ function Map() {
       bx++;
     }
   });
-  console.log(si);
-  console.log(mh);
-  console.log(q);
-  console.log(br);
-  console.log(bx);
   const data2 = [
     { boro: "si", crashes: si },
     { boro: "q", crashes: q },
@@ -101,6 +98,7 @@ function Map() {
           y="crashes"
         />
       </VictoryChart>
+      <Card data={data2} />
     </div>
   );
 }

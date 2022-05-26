@@ -4,14 +4,22 @@ import Cards from "./Components/card.js";
 import Map from "./Components/map";
 import "bootstrap";
 import "./App.css";
-//import StatenData from "./Components/StatenData.js";
 import data from "./Components/data.js";
+
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      data: data,
+      foundData: []
+    };
   }
-  //https://data.cityofnewyork.us/resource/h9gi-nx95.json (API)
+
+  handleData = (data) => {
+    this.setState({ foundData: data });
+  };
+
+  //https://data.cityofnewyork.us/resource/h9gi-nx95.json?$$app_token=yJglS9h953MLBYNHJC4EDB4Q0&borough=STATEN%20ISLAND
 
   addToBoroughCount = (Borough) => {
     console.log("STATEN ISLAND");
@@ -22,30 +30,32 @@ class App extends Component {
     console.log(this.state.staten);
   };
 
-  //<Borough ={this.state.staten}/>
-
-  //data.forEach((data) => {
-  // console.log(data.borough);
-  //});
-
-  // === "STATEN ISLAND") {
-  // bdata += 1;
-  // }
-
-  // counters = { STATEN ISLAND: 0, BROOKLYN: 0, QUEENS:0, MANHATTAN:0,BRONX:0 };
-
-  // <Rows counters ={data[0]} /> {data.map((counters) => {  return <Rows counters={counters} />;})}
-  //map ()
+  componentDidMount = () => {
+    fetch(
+      "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$$app_token=yJglS9h953MLBYNHJC4EDB4Q0&borough=STATEN%20ISLAND"
+    )
+      .then((reponse) => response.json())
+      .then((data) => {
+        this.setState({ data: data });
+      })
+      .catch((e) => {
+        alert(e);
+      });
+  };
 
   render() {
     return (
       <div className="App">
         <Navbar />
         <h1>Staten Island Crash Locations 2022</h1>
-        <Cards />
-        <Map />
+        {this.state.data.map((data) => (
+          <Cards data={data} />
+        ))}
+
+        <Map handleData={this.handleData} />
       </div>
     );
   }
 }
+
 export default App;

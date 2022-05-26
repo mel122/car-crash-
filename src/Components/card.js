@@ -1,6 +1,6 @@
 import "bootstrap";
 import map from "./images/Map.jpeg";
-//import data from "./Components/StatenData.js"
+import data from "./data.js";
 import React from "react";
 
 function Cards(props) {
@@ -10,50 +10,8 @@ function Cards(props) {
         <div class="card">
           <img src={map} class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card Tti</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src={map} class="card-img-top" alt="map" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src={map} class="card-img-top" alt="map" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src={map} class="card-img-top" alt="map" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+            <h5 class="card-title">{this.state.props.on_street_name}</h5>
+            <p class="card-text"></p>
           </div>
         </div>
       </div>

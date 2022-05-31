@@ -1,5 +1,5 @@
 import data from "./StatenData.js";
-import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
+import { VictoryBar, VictoryChart, VictoryAxis, VictoryEffect } from "victory";
 import React, { Component } from "react";
 
 function Map(props) {

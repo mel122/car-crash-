@@ -24,14 +24,14 @@
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .Card {
   width: calc(20vw - 4em);
   margin: 1em;
   padding: 1em;
-  background-color: white;
+  background-color: pink;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   vertical-align: top;

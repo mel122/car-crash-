@@ -1,6 +1,6 @@
-import data from "./StatenData.js";
-import { VictoryBar, VictoryChart, VictoryAxis, VictoryEffect } from "victory";
-import React, { Component } from "react";
+import data from "./data.js";
+import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
+import React from "react";
 
 function Map(props) {
   //map for borough
@@ -10,19 +10,19 @@ function Map(props) {
   let br = 0;
   let bx = 0;
   data.forEach((item) => {
-    if (item.borough == "STATEN ISLAND") {
+    if (item.borough === "STATEN ISLAND") {
       si++;
     }
-    if (item.borough == "MANHATTAN") {
+    if (item.borough === "MANHATTAN") {
       mh++;
     }
-    if (item.borough == "QUEENS") {
+    if (item.borough === "QUEENS") {
       q++;
     }
-    if (item.borough == "BROOKLYN") {
+    if (item.borough === "BROOKLYN") {
       br++;
     }
-    if (item.borough == "BRONX") {
+    if (item.borough === "BRONX") {
       bx++;
     }
   });

@@ -4,7 +4,7 @@ import React from "react";
 const onClick = () => {
   window.scroll({
     bottom: document.body.scrollHeight,
-    left: 0,
+    left: 20,
     behavior: "smooth"
   });
 };

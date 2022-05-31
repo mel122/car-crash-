@@ -4,7 +4,7 @@ import Cards from "./Components/card.js";
 import Map from "./Components/map";
 import "bootstrap";
 import "./App.css";
-import data from "./Components/data.js";
+import data from "./Components/StatenData.js";
 
 class App extends Component {
   constructor(props) {
@@ -19,8 +19,6 @@ class App extends Component {
     this.setState({ foundData: data });
   };
 
-  //https://data.cityofnewyork.us/resource/h9gi-nx95.json?$$app_token=yJglS9h953MLBYNHJC4EDB4Q0&borough=STATEN%20ISLAND
-
   addToBoroughCount = (Borough) => {
     console.log("STATEN ISLAND");
     this.setState((data) => {
@@ -34,7 +32,7 @@ class App extends Component {
     fetch(
       "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$$app_token=yJglS9h953MLBYNHJC4EDB4Q0&borough=STATEN%20ISLAND"
     )
-      .then((reponse) => response.json())
+      .then((response) => response.json())
       .then((data) => {
         this.setState({ data: data });
       })
@@ -48,10 +46,11 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <h1>Staten Island Crash Locations 2022</h1>
-        {this.state.data.map((data) => (
-          <Cards data={data} />
-        ))}
-
+        <div className="grid">
+          {this.state.data.map((data) => (
+            <Cards data={data} />
+          ))}
+        </div>
         <Map handleData={this.handleData} />
       </div>
     );

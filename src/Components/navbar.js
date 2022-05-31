@@ -1,5 +1,5 @@
 import "bootstrap";
-import React, { Component } from "react";
+import React from "react";
 
 const onClick = () => {
   window.scroll({
@@ -11,10 +11,16 @@ const onClick = () => {
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Staten Island Crash Locations</span>
-        <button onClick={onClick} type="button" class="btn btn-outline-info">
+    <nav className="navbar navbar-light bg-light">
+      <div className="container-fluid">
+        <span className="navbar-brand mb-0 h1">
+          Staten Island Crash Locations
+        </span>
+        <button
+          onClick={onClick}
+          type="button"
+          className="btn btn-outline-info"
+        >
           Go to Graph
         </button>
       </div>

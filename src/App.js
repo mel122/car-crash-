@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <h1>Staten Island Crash Locations 2022</h1>
+        <h6>Scroll to Find Street!</h6>
         <div className="grid">
           {this.state.data.map((data) => (
             <Cards data={data} />
